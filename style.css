@@ -10,7 +10,6 @@
 
 body {
   display: flex;
-  flex-direction: row;
   min-height: 100vh;
   background-color: #f7f7f7;
   color: #222;
@@ -21,7 +20,7 @@ body {
 --------------------------------*/
 .sidebar {
   width: 30%;
-  background: #1e293b;
+  background: #1e293b; /* bleu-gris professionnel */
   color: #fff;
   padding: 30px 25px;
   display: flex;
@@ -73,7 +72,7 @@ body {
 
 .qr-code {
   width: 100px;
-  height: auto;
+  height: 100px;
   margin-top: 5px;
 }
 
@@ -151,6 +150,15 @@ h1 {
   color: #444;
 }
 
+ul {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+ul li {
+  list-style: disc;
+}
+
 /* -------------------------------
    COMPÉTENCES (grille moderne)
 --------------------------------*/
@@ -166,7 +174,7 @@ h1 {
   border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 15px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .skill-title {
@@ -176,87 +184,5 @@ h1 {
   margin-bottom: 8px;
 }
 
-/* -------------------------------
-   RESPONSIVE DESIGN
---------------------------------*/
 
-/* Tablettes (entre 768px et 1024px) */
-@media screen and (max-width: 1024px) {
-  body {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .main-content {
-    padding: 25px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Smartphones (max 768px) */
-@media screen and (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .photo-container {
-    width: 100px;
-    height: 100px;
-  }
-
-  .main-content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 1rem;
-  }
-
-  .qr-code {
-    width: 80px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Petits smartphones (max 480px) */
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .qr-code {
-    width: 70px;
-  }
-
-  .photo-container {
-    width: 90px;
-    height: 90px;
-  }
-}
 
